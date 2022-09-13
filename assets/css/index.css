@@ -46,3 +46,48 @@ button:hover {
     color: black;
     border: 1.5px solid black !important;
 }
+
+.modal-dialog {
+    max-width: 85vw;
+    max-height: 3vh;
+}
+
+.modal .modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-body p {
+    font-size: 12px;
+}
+
+.modal-header {
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.modal-header h1 {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Sora" sans-serif;
+    text-align: center !important;
+}
+
+.modal-header i {
+    font-size: 25px !important;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.modal-header p {
+    font-size: 14px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+.modal-footer {
+    background: transparent;
+    border: none !important;
+}
