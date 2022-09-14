@@ -174,3 +174,10 @@ button:hover {
     background: transparent;
     border: none !important;
 }
+
+.contentBody {
+    margin-top: 0.5rem;
+}
+.contentBody .card {
+    margin-top: 1.5rem;
+}
