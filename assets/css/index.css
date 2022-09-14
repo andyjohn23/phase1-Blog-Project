@@ -216,3 +216,34 @@ button:hover {
 .contentBody .card .card-body a:hover {
     background-color: #0E93CD;
 }
+
+.contentBody .card .card-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentBody .card .likeButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0.4rem;
+}
+
+.contentBody .card .likeButton span {
+    font-size: 15px;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    padding-top: 4.5px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.contentBody .card .likeButton i {
+    font-size: 21px;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+}
