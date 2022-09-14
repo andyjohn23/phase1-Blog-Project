@@ -209,3 +209,7 @@ button:hover {
     outline: none;
     border: none;
 }
+
+.contentBody .card .card-body a:hover {
+    background-color: #0E93CD;
+}
