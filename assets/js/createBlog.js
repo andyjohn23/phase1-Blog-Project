@@ -12,8 +12,12 @@ const createBlog = async (e) => {
     await fetch('http://localhost:3000/posts', {
         method: 'POST',
         body: JSON.stringify(blogBody),
-        headers: {'Content-Type': 'application/json'}
+        headers: { 'Content-Type': 'application/json' }
     })
+
+    Swal.fire(
+        'Blog Posted Successfully!'
+    )
 
     window.location.replace('/');
 }

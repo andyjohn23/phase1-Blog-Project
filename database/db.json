@@ -23,6 +23,18 @@
       "title": "json-server2",
       "body": "my fourth post using json-server",
       "likes": 20
+    },
+    {
+      "title": "testing5",
+      "body": "testing my fifth blog post.",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "title": "testing6",
+      "body": "testing my sixth blog post",
+      "likes": 0,
+      "id": 6
     }
   ],
   "comments": [

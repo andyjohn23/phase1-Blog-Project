@@ -16,7 +16,7 @@ const renderBlogs = async () => {
                 <div class="card-body">
                     <p class="card-text">${blog.body.slice(0, 150)}</p>
                     <div class="card-buttons">
-                        <a class="btn btn-primary">Read more</a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#readBlog">Read more</a>
                         <div class="likeButton">
                             <i class="material-icons outlined">thumb_up</i>
                             <span>${blog.likes}</span>
