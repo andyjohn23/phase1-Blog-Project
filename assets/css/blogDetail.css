@@ -1,0 +1,11 @@
+#blog-detailBody .card {
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    width: 30%;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 6px 18px -7px rgba(0, 0, 0, 0.94);
+    -webkit-box-shadow: 0px 6px 18px -7px rgba(0, 0, 0, 0.94);
+    -moz-box-shadow: 0px 6px 18px -7px rgba(0, 0, 0, 0.94);
+}
