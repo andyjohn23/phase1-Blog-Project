@@ -1,0 +1,43 @@
+#blog-detailBody .card {
+  margin: 0 auto;
+  margin-top: 0.3rem;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-radius: 5px;
+}
+
+#blog-detailBody .card-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+#blog-detailBody .card-buttons a i {
+  font-size: 26px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+#blog-detailBody .card-buttons i {
+  color: red !important;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+#blog-detailBody .card-title {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Sora" sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+
+#blog-detailBody .card-text {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Sora" sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
