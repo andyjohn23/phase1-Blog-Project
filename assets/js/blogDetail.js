@@ -1,6 +1,6 @@
 const id = new URLSearchParams(window.location.search).get('id');
 const containerBlog = document.querySelector('.read-modal');
-const deleteButton = document.querySelector('.delete-blog');
+const deleteButton = document.querySelector('.delete-blog, .read-modal');
 
 const renderBlogDetail = async () => {
     const response = await fetch("http://localhost:3000/posts/" + id);
@@ -19,6 +19,13 @@ const renderBlogDetail = async () => {
             </div>
           </div>`;
     containerBlog.innerHTML = blogDetailTemplate;
+
+    deleteButton.addEventListener('click', async (e) => {
+        const response = await fetch("http://localhost:3000/posts/" + id, {
+            method: "DELETE"
+        });
+        window.location.replace('/');
+    })
 }
 
 window.addEventListener('DOMContentLoaded', () => renderBlogDetail())

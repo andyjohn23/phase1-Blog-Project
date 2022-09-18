@@ -15,9 +15,9 @@ const createBlog = async (e) => {
         headers: { 'Content-Type': 'application/json' }
     })
 
-    Swal.fire(
-        'Blog Posted Successfully!'
-    )
+    // Swal.fire(
+    //     'Blog Posted Successfully!'
+    // )
 
     window.location.replace('/');
 }
