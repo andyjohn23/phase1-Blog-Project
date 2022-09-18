@@ -11,7 +11,7 @@ const renderBlogs = async () => {
         `<div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    ${blog.title}
+                    ${blog.title.slice(0, 150)}
                 </div>
                 <div class="card-body">
                     <p class="card-text">${blog.body.slice(0, 150)}</p>
