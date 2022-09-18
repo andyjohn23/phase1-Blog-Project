@@ -266,6 +266,12 @@ button:hover {
 }
 
 .read-modal .modal-dialog {
-  max-width: 90vw;
+  max-width: 80vw;
   max-height: 3vh;
+}
+
+.read-modal .modal-footer i {
+  color: red !important;
+  cursor: pointer;
+  font-size: 26px;
 }
