@@ -9,7 +9,7 @@ const createBlog = async (e) => {
         likes: 0
     }
 
-    await fetch('http://localhost:3000/posts', {
+    await fetch('https://phase1-blog.herokuapp.com/posts', {
         method: 'POST',
         body: JSON.stringify(blogBody),
         headers: { 'Content-Type': 'application/json' }

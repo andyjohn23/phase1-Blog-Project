@@ -3,7 +3,7 @@ const containerBlog = document.querySelector('.read-modal');
 const deleteButton = document.querySelector('.delete-blog, .read-modal');
 
 const renderBlogDetail = async () => {
-    const response = await fetch("http://localhost:3000/posts/" + id);
+    const response = await fetch("https://phase1-blog.herokuapp.com/posts/" + id);
     const blog = await response.json();
 
     const blogDetailTemplate =
@@ -21,7 +21,7 @@ const renderBlogDetail = async () => {
     containerBlog.innerHTML = blogDetailTemplate;
 
     deleteButton.addEventListener('click', async (e) => {
-        const response = await fetch("http://localhost:3000/posts/" + id, {
+        const response = await fetch("https://phase1-blog.herokuapp.com/posts/" + id, {
             method: "DELETE"
         });
         window.location.replace('/');

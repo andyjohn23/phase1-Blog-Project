@@ -1,6 +1,6 @@
 const container = document.querySelector('.row')
 const renderBlogs = async () => {
-    let url = "http://localhost:3000/posts?_sort=id&_order=desc";
+    let url = "https://phase1-blog.herokuapp.com/posts?_sort=id&_order=desc";
     const res = await fetch(url);
     const blogs = await res.json();
     console.log(blogs)
