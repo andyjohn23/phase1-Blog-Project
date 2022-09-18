@@ -13,7 +13,7 @@ const renderBlogDetail = async () => {
                 <hr />
                 <p class="card-text">${blog.body}</p>
                 <div class="card-buttons">
-                    <a href="/"><i class="material-icons" title="Back">arrow_back</i></a>
+                    // <a href="/"><i class="material-icons" title="Back">arrow_back</i></a>
                     <i class="material-icons delete-blog" title="Delete">delete</i>
                 </div>
             </div>
