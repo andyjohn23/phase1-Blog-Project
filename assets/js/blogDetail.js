@@ -7,22 +7,17 @@ const renderBlogDetail = async () => {
     const blog = await response.json();
 
     const blogDetailTemplate =
-        `<div class="modal fade" id="readBlog" data-backdrop="static" data-keyboard="false" tabindex="-1"
-    aria-labelledby="image" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="container modal-content read-modal-content">
-            <div class="modal-header">
-                <h1>${blog.title}</h1>
-                <i data-dismiss="modal" class="material-icons">clear</i>
+        `<div class="card">
+            <div class="card-body">
+                <h5 class="card-title">${blog.title}</h5>
+                <hr />
+                <p class="card-text">${blog.body}</p>
+                <div class="card-buttons">
+                    <a href="/"><i class="material-icons delete-blog" title="Back">arrow_back</i></a>
+                    <i class="material-icons delete-blog" title="Delete">delete</i>
+                </div>
             </div>
-
-            <div class="modal-body">${blog.body}</div>
-            <div class="modal-footer ">
-                <i class="material-icons delete-blog">delete</i>
-            </div>
-        </div>
-    </div>
-</div>`;
+          </div>`;
     containerBlog.innerHTML = blogDetailTemplate;
 }
 
