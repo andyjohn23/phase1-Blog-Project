@@ -1,6 +1,6 @@
 const container = document.querySelector('.row')
 const renderBlogs = async () => {
-    let url = "https://phase1-blog.herokuapp.com/posts?_sort=id&_order=desc";
+    let url = "https://expressify-sinatra.herokuapp.com/posts";
     const res = await fetch(url);
     const blogs = await res.json();
     console.log(blogs)
@@ -11,10 +11,10 @@ const renderBlogs = async () => {
         `<div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    ${blog.title.slice(0, 150)}
+                    ${blog.title}
                 </div>
                 <div class="card-body">
-                    <p class="card-text">${blog.body.slice(0, 150)}</p>
+                    <p class="card-text">${blog.content}</p>
                     <div class="card-buttons">
                         <a href="/blogDetail.html?id=${blog.id}" class="btn btn-primary">Read more</a>
                         <div class="likeButton">
