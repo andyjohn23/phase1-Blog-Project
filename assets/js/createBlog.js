@@ -5,11 +5,11 @@ const createBlog = async (e) => {
 
     const blogBody = {
         title: form.title.value,
-        body: form.body.value,
+        content: form.content.value,
         likes: 0
     }
 
-    await fetch('http://localhost:3000/posts', {
+    await fetch('https://expressify-sinatra.herokuapp.com/posts', {
         method: 'POST',
         body: JSON.stringify(blogBody),
         headers: { 'Content-Type': 'application/json' }
